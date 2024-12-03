@@ -1,0 +1,28 @@
+name: Ruff Lint
+
+on:
+  pull_request: # PR 생성 시 실행
+    branches:
+      - main # 워크플로우를 실행할 브랜치 (사용자 환경에 맞게 수정)
+  push: # 코드 푸시 시 실행
+    branches:
+      - main # 워크플로우를 실행할 브랜치 (사용자 환경에 맞게 수정)
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest # 실행 환경 (필요에 따라 수정 가능)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # GitHub Actions에서 코드 가져오기
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11.10" # Python 버전 (사용자 환경에 맞게 수정)
+
+      - name: Install Ruff
+        run: pip install ruff # Ruff 설치
+
+      - name: Run Ruff
+        run: ruff check src/ # src 디렉토리 검사 (검사 대상 경로 수정 가능)

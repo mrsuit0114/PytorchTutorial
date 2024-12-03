@@ -1,0 +1,56 @@
+name: torchtuto
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h99b78c6_7
+  - ca-certificates=2024.8.30=hf0a4a13_0
+  - cffi=1.17.1=py311h3a79f62_0
+  - cfgv=3.3.1=pyhd8ed1ab_0
+  - distlib=0.3.9=pyhd8ed1ab_1
+  - filelock=3.16.1=pyhd8ed1ab_0
+  - identify=2.6.3=pyhd8ed1ab_0
+  - libblas=3.9.0=25_osxarm64_openblas
+  - libcblas=3.9.0=25_osxarm64_openblas
+  - libcxx=19.1.4=ha82da77_0
+  - libexpat=2.6.4=h286801f_0
+  - libffi=3.4.2=h3422bc3_5
+  - libgfortran=5.0.0=13_2_0_hd922786_3
+  - libgfortran5=13.2.0=hf226fd6_3
+  - liblapack=3.9.0=25_osxarm64_openblas
+  - libopenblas=0.3.28=openmp_hf332438_1
+  - libsqlite=3.47.0=hbaaea75_1
+  - libzlib=1.3.1=h8359307_2
+  - llvm-openmp=19.1.4=hdb05f8b_0
+  - ncurses=6.5=h7bae524_1
+  - nodeenv=1.9.1=pyhd8ed1ab_0
+  - numpy=2.1.3=py311h649a571_0
+  - openssl=3.4.0=h39f12f2_0
+  - pip=24.3.1=pyh8b19718_0
+  - platformdirs=4.3.6=pyhd8ed1ab_1
+  - pre-commit=4.0.1=pyha770c72_0
+  - pycparser=2.22=pyh29332c3_1
+  - python=3.11.10=hc51fdd5_3_cpython
+  - python_abi=3.11=5_cp311
+  - pyyaml=6.0.2=py311h460d6c5_1
+  - readline=8.2=h92ec313_1
+  - ruff=0.8.1=py311hdb0c05a_0
+  - setuptools=75.6.0=pyhff2d567_1
+  - tk=8.6.13=h5083fa2_1
+  - tree=2.1.3=h99b78c6_0
+  - tzdata=2024b=hc8b5060_0
+  - ukkonen=1.0.1=py311h2c37856_5
+  - virtualenv=20.28.0=pyhd8ed1ab_0
+  - wheel=0.45.1=pyhd8ed1ab_1
+  - xz=5.2.6=h57fd34a_0
+  - yaml=0.2.5=h3422bc3_2
+  - pip:
+      - fsspec==2024.10.0
+      - jinja2==3.1.4
+      - markupsafe==3.0.2
+      - mpmath==1.3.0
+      - networkx==3.4.2
+      - sympy==1.13.1
+      - torch==2.5.1
+      - typing-extensions==4.12.2
+prefix: /opt/anaconda3/envs/torchtuto
